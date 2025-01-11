@@ -27,14 +27,11 @@ function Home() {
                 <h2>Discover Penang</h2>
                 <div className="video-container">
                     <iframe 
-                        width="860" 
-                        height="515" 
-                        src="https://www.youtube.com/embed/KeDSg4Y_njg" 
-                        title="Penang Travel Guide" 
-                        frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowFullScreen>
-                    </iframe>
+                        src="https://www.youtube.com/embed/KeDSg4Y_njg"
+                        title="Penang Travel Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
                 </div>
                 <div className="video-description">
                     <p>Experience the charm of Penang - where heritage meets modernity, and culinary delights await at every corner. From historic Georgetown to pristine beaches, discover why Penang is Malaysia's cultural gem.</p>
