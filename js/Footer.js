@@ -8,9 +8,9 @@ function Footer() {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-section">
-                    <Link to="/">
+                    <a href="https://www.wikipedia.org/wiki/Penang" target="_blank" rel="noopener noreferrer">
                         <img src="https://pic.superbed.cc/item/678292a1fa9f77b4dc8b4741.png" alt="Penang Logo" className="footer-logo" />
-                    </Link>
+                    </a>
                 </div>
                 <div className="footer-section">
                     <h3>Quick Links</h3>
