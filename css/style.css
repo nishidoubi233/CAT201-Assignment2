@@ -1,0 +1,875 @@
+/********************************************
+ * style.css - 全站主要样式
+ ********************************************/
+
+/* Reset default margins and style differences */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic global settings */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /********************************************
+   * Header
+   ********************************************/
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #2C5530;
+    color: #fff;
+    min-height: 90px;
+  }
+  
+  .logo img {
+    vertical-align: middle;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav li {
+    margin: 0;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .nav a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .nav a.active {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-color: var(--accent-color);
+  }
+  
+  /********************************************
+   * Guide 
+   ********************************************/
+  .Guide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    background-color: #F5F9F4;
+  }
+  
+  .Guide-text {
+    max-width: 40%;
+  }
+  
+  .Guide-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .Guide-text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .Guide-text button {
+    padding: 10px 20px;
+    background-color: #2C5530;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  /********************************************
+   * Footer - 底部
+   ********************************************/
+  .footer {
+    background-color: #2C5530;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-section h3 {
+    color: #A5D6A7;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #A5D6A7;
+  }
+  
+  .footer-bottom {
+    background-color: #1c1c1c;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 0;
+    border-top: 1px solid #3d704d;
+  }
+  
+  .footer-bottom p {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .slider-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s ease;
+  }
+  
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .slider-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .left-arrow {
+    left: 20px;
+  }
+  
+  .right-arrow {
+    right: 20px;
+  }
+  
+  /* 添加移动端响应式支持 */
+  @media (max-width: 768px) {
+    .slider-container {
+      height: 300px;
+    }
+    
+    .slider-arrow {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
+  }
+  .attraction-card img {
+    width: 500px;
+    height: auto;
+    margin: 5px;
+}
+  .food-card img {
+  width: 500px;
+  height: auto;
+  margin: 5px;
+}
+  .hotel-card img {
+  width: 700px;
+  height: auto;
+  margin: 5px; 
+}
+
+.hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.hotel-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+}
+
+.hotel-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.hotel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hotel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hotel-card:hover .hotel-overlay {
+    opacity: 1;
+}
+
+.hotel-details {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hotel-info {
+    padding: 1.5rem;
+}
+
+.hotel-info h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.hotel-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.book-now {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.book-now:hover {
+    background: #0052a3;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hotels-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hotel-image {
+        height: 200px;
+    }
+}
+
+/* Add video section styles */
+.video-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F5F9F4;
+}
+
+.video-container {
+    max-width: 860px;
+    margin: 20px auto;
+}
+
+.video-description {
+    max-width: 800px;
+    margin: 20px auto;
+    color: #2C5530;
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .footer-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        height: 90px;
+    }
+}
+
+/* Update global theme colors */
+:root {
+    --primary-color: #2C5530;
+    --secondary-color: #7FB069;
+    --accent-color: #A5D6A7;
+    --background-light: #F5F9F4;
+    --text-dark: #2C5530;
+    --text-light: #fff;
+}
+
+
+.Guide {
+    background-color: var(--background-light);
+}
+
+.Guide-text button {
+    background-color: var(--primary-color);
+}
+
+.nav a:hover {
+    color: var(--accent-color);
+}
+
+/* 添加新的主页样式 */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #F5F9F4;
+    width: 100%;
+    margin: 0;
+}
+
+.intro-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro-content {
+    flex: 1;
+    max-width: 500px;
+    padding: 0 20px;
+}
+
+.intro-content h1 {
+    font-size: 2.5rem;
+    color: #2C5530;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.start-button {
+    padding: 12px 30px;
+    background-color: #2C5530;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #1a3d1f;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .intro-section {
+        padding: 40px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .intro-image, 
+    .intro-content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+/* Ensure entire container is centered */
+.home-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Add logo styles */
+.header-logo {
+    height: 70px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.footer-logo {
+    height: 120px;
+    width: auto;
+    border-radius: 8px;
+}
+
+/* Ensure logo container styles are correct */
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 50px;
+    }
+    
+    .footer-logo {
+        height: 90px;
+    }
+}
+
+/* Adjust footer section layout to accommodate logo */
+.footer-section:first-child {
+    justify-content: center;
+}
+
+/* Add Font Awesome icon support */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Navigation section styles */
+.guide-section {
+    padding: 60px 20px;
+    background-color: var(--background-light);
+    text-align: center;
+}
+
+.guide-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.guide-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.guide-card .icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.guide-card h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--text-dark);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .guide-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .guide-title {
+        font-size: 2rem;
+    }
+}
+
+/* Add Why Visit Penang section styles */
+.why-visit-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.why-visit-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.why-visit-title {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.why-visit-text {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.why-visit-text p {
+    margin-bottom: 25px;
+}
+
+/* Highlight keyword styles */
+.highlight {
+    color: #E91E63;  
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .why-visit-section {
+        padding: 40px 20px;
+    }
+
+    .why-visit-title {
+        font-size: 2.2rem;
+    }
+
+    .why-visit-text {
+        font-size: 1rem;
+    }
+}
+
+/* 添加新的内容展示样式 */
+.content-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.content-item:last-child {
+    margin-bottom: 0;
+}
+
+.content-item img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-item h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.content-item p {
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content-title {
+        font-size: 2.2rem;
+    }
+
+    .content-item {
+        margin-bottom: 50px;
+    }
+
+    .content-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-item p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav ul {
+        gap: 10px;
+    }
+
+    .nav a {
+        padding: 6px 12px;
+        font-size: 1rem;
+    }
+}
+
+/* Add contact form styles */
+.contact-section {
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.form-input {
+    padding: 12px 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.form-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #1a3d1f;
+}
+
+/* Feedback modal styles */
+.feedback-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    text-align: center;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.feedback-modal h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feedback-modal button {
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add Hotels page styles */
+.page-content h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 40px 0 60px;  /* 增加上下间距 */
+}
+
+.hotels-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-content h1 {
+        font-size: 2.2rem;
+        margin: 30px 0 40px;
+    }
+}

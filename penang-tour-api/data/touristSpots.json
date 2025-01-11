@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Penang Street Art",
+    "description": "Penang's famous street art wall in George Town.",
+    "location": "George Town",
+    "image": "url_to_image_1",
+    "comments": []
+  },
+  {
+    "id": 2,
+    "name": "Penang Hill",
+    "description": "Penang's highest mountain, offering a panoramic view of the city.",
+    "location": "Air Itam",
+    "image": "url_to_image_2",
+    "comments": []
+  },
+  {
+    "id": 3,
+    "name": "Penang National Park",
+    "description": "Malaysia's smallest national park, featuring rich natural landscapes.",
+    "location": "Teluk Bahang",
+    "image": "url_to_image_3",
+    "comments": []
+  }
+]

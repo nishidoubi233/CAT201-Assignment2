@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penang Tourism</title>
+
+    <!-- Load CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <!-- Load React 18 -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- Add React Router -->
+    <script src="https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.min.js"></script>
+
+    <!-- Load configuration file first -->
+    <script type="text/babel" src="js/config.js"></script>
+
+    <!-- Then load other components -->
+    <script type="text/babel" src="js/components/ImageSlider.js"></script>
+    <script type="text/babel" src="js/Header.js"></script>
+    <script type="text/babel" src="js/Guide.js"></script>
+    <script type="text/babel" src="js/Footer.js"></script>
+   
+    <!-- Then load page js files -->
+    <script type="text/babel" src="js/pages/Home.js"></script>
+    <script type="text/babel" src="js/pages/Attractions.js"></script>
+    <script type="text/babel" src="js/pages/Food.js"></script>
+    <script type="text/babel" src="js/pages/Hotels.js"></script>
+    <script type="text/babel" src="js/pages/Contact.js"></script>
+
+    <!-- Finally load the main application file -->
+    <script type="text/babel" src="js/app.js"></script>
+</body>
+</html>
