@@ -8,6 +8,6 @@ https://nishidoubi233.github.io/CAT201-Assignment2/#/
 
 ![ ](assets/demo.png)
 
-## optimized for mobile
+## Optimized for mobile
 We strive to provide the best possible browsing experience for our users, regardless of whether they are accessing the site on a desktop or a mobile device. Consequently, our website has been optimized for mobile devices to ensure a smooth and user-friendly experience across various screen sizes.
 ![ ](assets/mobile_2.jpg)
